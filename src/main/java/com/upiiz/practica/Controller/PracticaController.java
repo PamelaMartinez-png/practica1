@@ -59,8 +59,8 @@ public class PracticaController {
         etiquetas.add(new Etiquetas("button","Botón interactivo","<button type=\"submit\">Enviar datos</button>","type, disabled","<button type=\"submit\">Enviar</button>"));
         etiquetas.add(new Etiquetas("select","Menú desplegable","<select name=\"opciones\"> <option value=\"1\">Opción 1</option> </select>","name, size, multiple, required","<select name=\"opcion\"><option>1</option></select>"));
 
-        etiquetas.add(new Etiquetas("audio","Reproductor de audio","<body>...</body>","src, controls, autoplay","<audio controls src=\"/media/video.ogg\"></audio>"));
-        etiquetas.add(new Etiquetas("video","Reproductor de video","<body>...</body>","src, controls, width, height","<video controls src=\"/media/video.mp4\" width=\"300\"></video>"));
+        etiquetas.add(new Etiquetas("audio","Reproductor de audio","<audio>...</audio>","src, controls, autoplay","<audio controls src=\"/media/video.ogg\"></audio>"));
+        etiquetas.add(new Etiquetas("video","Reproductor de video","<video>...</video>","src, controls, width, height","<video controls src=\"/media/video.mp4\" width=\"300\"></video>"));
 
     }
     @GetMapping("/")
