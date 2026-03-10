@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+//Pamela Guadalupe Martinez Arteaga 2025670142
+//Danna Elizama Arredondo Cordero 2025670102
+-->
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu HTML</title>
+    <link rel="stylesheet" th:href="@{/estilos.css}">
+</head>
+<body>
+<h1>Menu de etiquetas HTML</h1>
+<p>Selecciona una etiqueta para ver informacion sobre esta</p>
+
+<div class="contenedor-lista">
+    <div th:each="item : ${etiquetas}" class="etiqueta">
+    <div>
+
+        <strong class="nombre-tag" th:text="'<' + ${item.nombre} + '>'"></strong>
+        <span th:text="| - ${item.descripcion}|"></span>
+
+    </div>
+        <a th:href="@{/etiqueta/{nombre}(nombre=${item.nombre})}" class="btn btn-azul">Ver detalle</a>
+</div>
+</div>
+</body>
+</html>
